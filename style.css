@@ -268,7 +268,7 @@ header a {
     animation-delay: -15s;
 }
 
-#cat-hanger-img {
+#puppet-theater-img {
     animation: animation var(--animation-duration) linear infinite,
         scaling var(--animation-duration) ease-in-out infinite;
     animation-delay: -17.5s;
@@ -290,7 +290,7 @@ header a {
 .paused #rear-hubs-img,
 .paused #kasa-logo-redesign-img,
 .paused #s-statue-img,
-.paused #cat-hanger-img {
+.paused #puppet-theater-img {
     animation-play-state: paused;
 }
 
