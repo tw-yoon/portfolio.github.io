@@ -247,43 +247,43 @@ header a {
         scaling var(--animation-duration) ease-in-out infinite;
 }
 
-#the-120-img {
+#steering-system-img {
     animation: animation var(--animation-duration) linear infinite,
         scaling var(--animation-duration) ease-in-out infinite;
     animation-delay: -2.5s;
 }
 
-#resistor-cutter-img {
+#the-120-img {
     animation: animation var(--animation-duration) linear infinite,
         scaling var(--animation-duration) ease-in-out infinite;
     animation-delay: -5s;
 }
 
-#steering-system-img {
+#kasa-logo-redesign-img {
     animation: animation var(--animation-duration) linear infinite,
         scaling var(--animation-duration) ease-in-out infinite;
     animation-delay: -7.5s;
 }
 
-#rear-hubs-img {
+#resistor-cutter-img {
     animation: animation var(--animation-duration) linear infinite,
         scaling var(--animation-duration) ease-in-out infinite;
     animation-delay: -10s;
 }
 
-#kasa-logo-redesign-img {
+#rear-hubs-img {
     animation: animation var(--animation-duration) linear infinite,
         scaling var(--animation-duration) ease-in-out infinite;
     animation-delay: -12.5s;
 }
 
-#s-statue-img {
+#puppet-theater-img {
     animation: animation var(--animation-duration) linear infinite,
         scaling var(--animation-duration) ease-in-out infinite;
     animation-delay: -15s;
 }
 
-#puppet-theater-img {
+#s-statue-img {
     animation: animation var(--animation-duration) linear infinite,
         scaling var(--animation-duration) ease-in-out infinite;
     animation-delay: -17.5s;
