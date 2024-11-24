@@ -61,20 +61,17 @@ document.addEventListener('DOMContentLoaded', function () {
             var bioContent = document.getElementById('bioContent');
             if (this.textContent === 'ENG') {
                 bioContent.innerHTML = `<p>
-                <strong>Hello!</strong> I'm Taewon Yoon, a junior studying Manufacturing and Design
-                Engineering
-                at Northwestern University, with a passion for product and UI/UX design.
-            </p>
-            <p> I thrive on the entire
-                creative process, from ideation to prototyping, and love bringing innovative solutions to life. 
-                I believe that having functionality in design is just as equally important as being aestheticly appeal. 
-                Besides my academic pursuits, I enjoy playing soccer and drawing, hobbies that fuel my
-                creativity and drive for design.
+                    Hi! My name is Taewon Yoon, and I am a junior studying Manufacturing and Design Engineering at
+                    Northwestern University, with a passion for product and UI/UX design.
+                    <br><br>
+                    From brainstorming to prototyping, I am always striving to find innovative solutions. My goal is to
+                    create products that balance functionality and aesthetics. Through this process, I hope to provide
+                    users better experiences and contribute to making life more convenient and beautiful.
             </p>`
             } else if (this.textContent === 'KOR') {
-                bioContent.innerHTML = `<p><strong>안녕하세요!</strong> 제 이름은 윤태원이고, 현재 노스웨스턴 대학교에서 제조와 디자인 공학을 전공하고 있습니다. 저는 제품 및 UI/UX 디자인에 관심을 가지고 있고, 앞으로도 이 분야에서 일을 하고 싶습니다.</p><p>저는 아이디어 구상부터 프로토타이핑까지, 디자인을 할 때 항상 혁신적인 해결책을 찾는 과정을 좋아합니다.  저는 디자인의 효용성이 사람들에게 보여지는 외적인 미관만큼 중요하다고 생각합니다. 취미 생활로는 친구들과 축구를 하는 것을 좋아하며 시간이 날 때마다 그림을 그리고 있습니다.</p>`;
+                bioContent.innerHTML = `<p>안녕하세요! 저는 현재 노스웨스턴 대학교에서 제조와 디자인 공학을 전공하고 있는 윤태원입니다. 저는 제품 및 UI/UX 디자인에 깊은 관심을 가지고 있으며, 앞으로 이 분야에서 전문성을 키워나가고 싶습니다.<br><br>저는 아이디어 구상부터 프로토타이핑까지, 항상 혁신적인 해결책을 찾으려고 노력합니다. 특히, 효용성과 미관을 모두 갖춘 제품을 만드는 것을 목표로 하고 있습니다. 이러한 과정을 통해 사용자들에게 더 나은 경험을 제공하고, 삶을 조금 더 편리하고 아름답게 만드는 데 기여하고 싶습니다.</p>`;
             } else if (this.textContent === 'JPN') {
-                bioContent.innerHTML = `<p><strong>初めまして！</strong> 私はノースウェスタン大学で製造とデザイン工学を専攻する3年生のユン・テウォンです。 私は製品及びUI/UXデザインに関心を持っています。</p><p>私はアイデア構想からプロトタイピングまで、デザインをする時、常に革新的な解決策を探す過程が好きです。私はデザインの効用性が人々に見られる外的な美観ほど重要だと思います。趣味生活としては友達とサッカーをするのが好きで時間があるたびに絵を描いています。</p>`;
+                bioContent.innerHTML = `<p>こんにちは！私は現在、ノースウェスタン大学で製造およびデザイン工学を専攻しているユン・テウォンと申します。私は製品デザインやUI/UXデザインに深い関心を持っており、将来的にはこの分野で専門性を高めていきたいと考えています。<br><br>アイデアの発想からプロトタイピングに至るまで、常に革新的な解決策を見つけるよう努力しています。特に、機能性と美しさの両方を兼ね備えた製品を作ることを目標としています。このプロセスを通じて、ユーザーにより良い体験を提供し、生活を少しでも便利で美しいものにすることに貢献したいと考えています。</p>`;
             }
         });
     });

@@ -209,7 +209,7 @@ header a {
     justify-content: center;
     align-items: center;
     transform-origin: center center;
-    offset-path: path("M 50,-99 L 300, 981");
+    offset-path: path("M 100,-99 L 350, 981");
     offset-rotate: 0deg;
     offset-distance: 0%;
 }
@@ -455,7 +455,7 @@ header a {
 
 .bio-image img {
     margin-left: 8px;
-    width: 200px;
+    width: 240px;
 }
 
 .content-buttons-container {
