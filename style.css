@@ -545,10 +545,19 @@ footer {
     max-width: 1080px;
     height: 250px;
     margin: 0 auto;
-    background-color: rgb(105, 255, 0);
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+.green {
+    background-color: rgb(105, 255, 0);
+}
+.orange {
+    background-color: rgb(255, 105, 0);
+}
+.red {
+    background-color: rgb(255, 0, 105);
 }
 
 .front-page img {
@@ -562,9 +571,8 @@ footer {
     z-index: 999;
     width: 100vw;
     max-width: 1080px;
-    height: 48px;
+    height: 50px;
     margin: 0 auto;
-    background-color: rgb(105, 255, 0);
     border-bottom: 1px solid black;
     box-sizing: border-box;
     display: flex;
@@ -593,17 +601,17 @@ footer {
     width: 100vw;
     max-width: 1080px;
     margin: 0 auto;
-    box-sizing: border-box;
 }
 
 .chapter-page {
     box-sizing: border-box;
     display: flex;
-    justify-content: left;
+    justify-content: ;
     align-items: center;
     width: 100vw;
     max-width: 1080px;
     height: 50px;
+    box-sizing: border-box;
 }
 
 .chapter-page p {
@@ -686,16 +694,16 @@ footer {
     max-width: 1080px;
     margin: 0 auto;
     background-color: transparent;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .image-section img,
 .image-section video {
     width: 254px;
-    height: 338px;
+    height: 254px;
     margin: 8px;
     object-fit: cover;
 }
@@ -707,5 +715,5 @@ footer {
 
 .image-section .landscape {
     width: 524px;
-    height: 338px;
+    aspect-ratio: 0.75;
 }
