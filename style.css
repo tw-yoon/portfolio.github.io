@@ -606,7 +606,7 @@ footer {
 .chapter-page {
     box-sizing: border-box;
     display: flex;
-    justify-content: ;
+    justify-content: left;
     align-items: center;
     width: 100vw;
     max-width: 1080px;
