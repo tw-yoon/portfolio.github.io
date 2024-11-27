@@ -40,7 +40,7 @@
 
         <div class="dropdown-menu">
             <div class="submenu-container">
-                <a>Projects</a>
+                <a id="class-projects">Class projects</a>
                 <div class="submenu">
                     <a href="cart-with-basket.html">Cart with basket</a>
                     <a href="the-120.html">The 120 ★</a>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="submenu-container">
-                <a>Formula sae</a>
+                <a id="formula-sae">Formula SAE</a>
                 <div class="submenu">
                     <a href="steering-system.html">Steering system</a>
                     <a href="rear-hubs.html">Rear hubs</a>
@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="submenu-container">
-                <a>Random stuff</a>
+                <a id="personal-projects">Personal projects</a>
                 <div class="submenu">
                     <a href="kasa-logo-redesign.html">KASA logo redesign</a>
                     <a href="s-statue.html">"S" statue</a>
@@ -79,104 +79,112 @@
 </header>
 
 <body>
-    <div class="front-page">
-        <img src="images/rear-hubs/rear-hubs-green.png" alt="cart-with-basket">
+    <div class="front-page orange">
+        <img src="images/rear-hubs/rear-hubs-orange.png" alt="cart-with-basket">
     </div>
-    <div class="title-page">
+    <div class="title-page orange">
         <p>Rear hubs</p>
     </div>
     <div class="content">
-        <div class="chapter-page">
+        <div class="chapter">
             <p>
                 Project summary
             </p>
         </div>
         <div class="content-page">
-            <img src="images/rear-hubs/hubs-disassembled.JPEG" class="landscape" alt="Image 2">
-            <div class="text-box-2">
+            <div class="image-section"><img src="images/rear-hubs/hubs-all.jpg" class="landscape"></div>
+            <div class="text-box-3">
                 <p>
                     <strong>Date:</strong> Jun. 2023 - Jun. 2024
                     <br><br>
-                    In my second project for the Formula SAE team, I decided to be in charge of the rear hubs and hub
-                    caps, because I wanted to learn how to operate the CNC mill. This project would heavily rely on
-                    precise CAD modeling and CAM operations, something that I have never done before.
+                    In my second project for the Formula SAE team, I took charge of the rear hubs and hub
+                    caps, because I wanted to learn how to operate the CNC mill. This project heavily relied on
+                    precise CAD modeling and CAM operations.
                 </p>
             </div>
         </div>
-        <div class="chapter-page">
+
+        <div class="chapter">
             <p>
-                Making process
+                CAD
             </p>
         </div>
-        <div class="content-page">
-            <img src="images/rear-hubs/rear hub nfr24.PNG" alt="Image 2">
-            <div class="text-box-2">
-                <p>
-                    Over the summer, I worked on the initial design phase using Solidworks while having biweekly Zoom
-                    meetings with Cameron, the suspension team leader. The initial CAD model then went through a
-                    rigorous refinement process throughout the fall quarter, facilitated by the guidance of Cameron.
-                    The main focus in this stage was peforming finite element analysis; crucial to ensure the structural
+        <div class="image-section">
+            <img src="images/rear-hubs/hubs-front.jpg">
+            <img src="images/rear-hubs/hubs-back.jpg">
+            <img src="images/rear-hubs/hubs-cross-section.jpg" class="landscape">
+            <img src="images/rear-hubs/hub-cap.jpg">
+        </div>
+        <div class="chapter">
+            <p>
+                FEA
+            </p>
+        </div>
+        <div class="content-page-2">
+            <div class="image-section">
+                <img src="images/rear-hubs/hubs-front-fea1.jpg">
+                <img src="images/rear-hubs/hubs-mesh.jpg">
+                <img src="images/rear-hubs/hubs-fea-stress.png" class="landscape">
+                <img src="images/rear-hubs/hubs-fea-deformation.png" class="landscape">
+                <img src="images/rear-hubs/hubs-fea-strain.png" class="landscape">
+            </div>
+            <div class="text-box-3">
+                <p> Finite element analysis tests were run to ensure the structural
                     integrity of the part in multiple driving situations. The testing was done for four cases: outside
                     cornering, inside cornering, braking, and accelerating, which all passed with a large factor of
-                    safety. This
-                    collaborative effort also included working alongside Benji, who was responsible for the design
-                    of the front hubs, ensuring coherence and functionality across the vehicle's design.
+                    safety. 
                 </p>
             </div>
         </div>
-        <div class="content-page">
-            <img src="images/rear-hubs/rear hub back 2.PNG" alt="Image 1">
-            <div class="text-box-2">
-                <p>
-                    By the end of the fall quarter, the design for the rear hubs was finalized, scheduled to be
-                    manufactured
-                    in winter break. Due to the complexity of the part and given the limitations of our school's
-                    facilities,
-                    which lacked a 5-axis CNC mill, we opted to outsource the manufacturing of the rear hubs. In order
-                    to do
-                    so, I made a geometrical dimensioning and tolerancing sheet to send over to the manufacturer.
-                    <br><br>
-                    However, the hub caps presented an opportunity for hands-on experience with CNC milling within our
-                    school's capabilities. Utilizing Fusion 360 for CAM, I prepared the hub caps for manufacturing,
-                    which
-                    happened during the winter quarter.
-                    <br><br>
-                    This project not only challenged my technical skills but also honed my ability to navigate the
-                    complexities of collaborative design and the intricacies of manufacturing processes. With this
-                    project I
-                    became confident in designing using a computer aided design software and operating the CNC milling
-                    machine.
-                </p>
-            </div>
-        </div>
-        <div class="chapter-page">
+
+        <div class="chapter">
             <p>
-                CAD & FEA
+                GD&T for rear hubs
             </p>
         </div>
-    </div>
-    <div class="image-section">
-        <img src="images/rear-hubs/rear hub nfr24 front.PNG" alt="Image 1">
-        <img src="images/rear-hubs/rear hub nfr24 section.PNG" class="landscape" alt="Image 2">
-        <img src="images/rear-hubs/fea 1.PNG" alt="Image 2">
-        <img src="images/rear-hubs/fea 2.PNG" alt="Image 2">
-        <img src="images/rear-hubs/fea stress.PNG" class="landscape" alt="Image 2">
-        <img src="images/rear-hubs/fea rear hub deformation.PNG" class="landscape" alt="Image 2">
-        <img src="images/rear-hubs/fea strain.PNG" class="landscape" alt="Image 2">
-        <img src="images/rear-hubs/rear hub nfr24 NEW.png" class="landscape" alt="Image 2">
-        <img src="images/rear-hubs/rear hub nfr24 NEW 2.png" class="landscape" alt="Image 2">
-        <img src="images/rear-hubs/fusion.png" class="landscape" alt="Image 2">
-        <img src="images/rear-hubs/IMG_4778.JPG" alt="Image 2">
-        <img src="images/rear-hubs/IMG_4780.jpg" alt="Image 2">
-        <img src="images/rear-hubs/IMG_5505.jpg" alt="Image 2">
-        <img src="images/rear-hubs/IMG_5506.JPG" alt="Image 2">
-        <img src="images/rear-hubs/hubs-disassembled.JPEG" class="landscape" alt="Image 2">
-        <img src="images/rear-hubs/IMG_5841.jpg" alt="Image 2">
-        <img src="images/rear-hubs/IMG_5842.JPG" alt="Image 2">
-        <img src="images/rear-hubs/IMG_5843.jpg" alt="Image 2">
-        <img src="images/rear-hubs/IMG_5844.JPG" alt="Image 2">
-    </div>
-    <div class="extra-space">
+        <div class="content-page-2">
+            <div class="text-box-3">
+                <p> Due to the complexity of the part I had to outsource the manufacturing of the rear hubs. I made an
+                    engineering drawing to send to the manufacturer.
+                </p>
+            </div>
+            <div class="image-section">
+                <img src="images/rear-hubs/hubs-gdnt1.png" class="landscape">
+                <img src="images/rear-hubs/hubs-gdnt2.png" class="landscape">
+            </div>
+        </div>
+        <div class="chapter">
+            <p>
+                Manufacturing process for hub caps
+            </p>
+        </div>
+        <div class="content-page-3">
+            <div class="text-box-3">
+                <p> The hub caps were CNC milled in the shop. I used Fusion 360 for CAM operations.</p>
+            </div>
+            <div class="image-section">
+                <img src="images/rear-hubs/hubs-cam.png" class="landscape">
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="images/rear-hubs/file (1).jpg">
+            <img src="images/rear-hubs/file (2).jpg">
+            <img src="images/rear-hubs/file (3).jpg">
+            <img src="images/rear-hubs/file (4).jpg">
+        </div>
+        <div class="chapter">
+            <p>
+                Final products
+            </p>
+        </div>
+        <div class="image-section">
+            <img src="images/rear-hubs/file (5).jpg">
+            <img src="images/rear-hubs/file (6).jpg">
+            <img src="images/rear-hubs/file (7).jpg">
+            <img src="images/rear-hubs/file (8).jpg">
+        </div>
+        <div class="extra-space">
+        </div>
     </div>
 </body>
 
