@@ -22,6 +22,19 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+::selection {
+    background-color: rgb(105, 255, 0);
+}
+
+body.orange-highlight ::selection {
+    background-color: rgb(255, 105, 0);
+}
+
+body.red-highlight ::selection {
+    background-color: rgb(255, 0, 105);
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -33,6 +46,7 @@ header {
     height: 50px;
     box-sizing: border-box;
     background-color: white;
+    user-select: none;
 }
 
 header button,
@@ -456,6 +470,7 @@ header a {
 .bio-image img {
     margin-left: 8px;
     width: 240px;
+    user-select: none;
 }
 
 .content-buttons-container {
@@ -477,6 +492,7 @@ header a {
     flex-direction: column;
     align-items: center;
     gap: 8px;
+    user-select: none;
 }
 
 .button-style,
@@ -531,6 +547,7 @@ header a {
 .front-page img {
     width: 200px;
     height: 200px;
+    user-select: none;
 }
 
 .title-page {
@@ -623,6 +640,7 @@ header a {
     justify-content: flex-start;
     align-items: center;
     max-width: 1080px;
+    user-select: none;
 }
 
 .image-section img,

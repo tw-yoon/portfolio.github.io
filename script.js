@@ -50,7 +50,7 @@ function updateVisitCount() {
 
     visitCount += 1;
     localStorage.setItem('visitCount', visitCount);
-    visitCountElement.textContent = `You visited this website ${visitCount} times.`;
+    visitCountElement.textContent = `You interacted with this website ${visitCount} times.`;
 }
 
 updateVisitCount();
