@@ -192,7 +192,6 @@ header a {
 
 .main {
     overflow: hidden;
-    user-select: none;
 }
 
 .rotation-container {
@@ -384,7 +383,6 @@ header a {
     margin: 0 auto;
     flex-direction: flex-start;
     justify-content: space-around;
-    user-select: none;
 }
 
 .project-column {
@@ -724,7 +722,6 @@ footer {
     padding-left: 8px;
     padding-right: 8px;
     z-index: 15;
-    user-select: none;
 }
 
 .footer {
