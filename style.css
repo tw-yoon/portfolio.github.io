@@ -615,44 +615,61 @@ header a {
 }
 
 .content-page,
-.content-page-2,
-.content-page-3 {
+.content-page-2 {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     box-sizing: border-box;
 }
 
 .content-page {
     flex-direction: row;
+    align-items: flex-start;
 }
 
 .content-page-2 {
     flex-direction: column;
+    align-items: center;
 }
 
-.content-page-3 {
-    flex-direction: row;
-}
-
-.image-section {
+.image-section,
+.image-section-2,
+.image-section-3 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: center;
     max-width: 1080px;
     user-select: none;
 }
 
+.image-section {
+    justify-content: flex-start;
+}
+
+.image-section-2 {
+    justify-content: center;
+}
+
+.image-section-3 {
+    justify-content: center;
+    max-width: 810px;
+
+}
+
 .image-section img,
-.image-section video {
+.image-section video,
+.image-section-2 img,
+.image-section-2 video,
+.image-section-3 img,
+.image-section-3 video {
     width: 254px;
     height: 254px;
     margin: 8px;
     object-fit: cover;
 }
 
-.image-section .landscape {
+.image-section .landscape,
+.image-section-2 .landscape,
+.image-section-3 .landscape {
     width: 524px;
     height: 254px;
 }
@@ -673,7 +690,7 @@ header a {
     text-align: left;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1080px) {
     .full-list {
         flex-direction: column;
         align-items: left;
@@ -687,25 +704,33 @@ header a {
 
     .content-page {
         flex-direction: column;
+        align-items: center;
     }
 
     .image-section {
-        width: 100vw;
+        width: 540px;
+        justify-content: center;
     }
 
-    .text-box-3 {
-        width: 100vw;
-        margin: 0 auto;
+    .image-section-2 {
+        width: 810px;
+        justify-content: center;
     }
 }
 
-@media (max-width: 1080px) {
-    .content-page-3 {
-        flex-direction: column;
-    }
-
-    .image-section {
+@media (max-width: 810px) {
+    .image-section-2,
+    .image-section-3 {
+        width: 540px;
         justify-content: center;
+    }
+}
+
+@media (max-width: 540px) {
+    .image-section,
+    .image-section-2,
+    .image-section-3 {
+        width: 270px;
     }
 }
 
