@@ -614,9 +614,18 @@ header a {
     align-items: center;
 }
 
+.the-120-dcs {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+}
+
 .image-section,
 .image-section-2,
-.image-section-3 {
+.image-section-3,
+.image-section-4 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -635,7 +644,11 @@ header a {
 .image-section-3 {
     justify-content: center;
     max-width: 810px;
+}
 
+.image-section-4 {
+    justify-content: left;
+    min-width: 810px;
 }
 
 .image-section img,
@@ -643,7 +656,9 @@ header a {
 .image-section-2 img,
 .image-section-2 video,
 .image-section-3 img,
-.image-section-3 video {
+.image-section-3 video,
+.image-section-4 img,
+.image-section-4 video {
     width: 254px;
     height: 254px;
     margin: 8px;
@@ -652,7 +667,8 @@ header a {
 
 .image-section .landscape,
 .image-section-2 .landscape,
-.image-section-3 .landscape {
+.image-section-3 .landscape,
+.image-section-4 .landscape {
     width: 524px;
     height: 254px;
 }
@@ -695,7 +711,8 @@ header a {
         justify-content: center;
     }
 
-    .image-section-2 {
+    .image-section-2,
+    .image-section-4 {
         width: 810px;
         justify-content: center;
     }
@@ -704,7 +721,8 @@ header a {
 @media (max-width: 810px) {
 
     .image-section-2,
-    .image-section-3 {
+    .image-section-3,
+    .image-section-4 {
         width: 540px;
         justify-content: center;
     }
