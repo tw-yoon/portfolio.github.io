@@ -159,11 +159,13 @@ header a {
     box-sizing: border-box;
 }
 
+.contact-buttons a {
+    text-decoration: none;
+    color: black;
+}
+
 .email-button,
 .linkedin-button {
-    border: none;
-    width: 80px;
-    height: 20px;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -173,21 +175,27 @@ header a {
     box-sizing: border-box;
     font-family: helvetica;
     font-size: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .email-button {
     margin-bottom: 4px;
 }
 
-.linkedin-button {
-    margin-bottom: 0px;
-}
-
 .email-button:hover,
 .linkedin-button:hover {
-    background-color: blue;
-    color: white;
+    color: blue;
     box-sizing: border-box;
+}
+
+.warning {
+    position: absolute;
+    right: calc(50% - min(540px, 50vw) + 8px);
+    bottom: calc(100vh - min(780px, 100%));
+    padding-bottom: 8px;
+    opacity: 1;
+    text-align: right;
 }
 
 .main {
@@ -199,9 +207,9 @@ header a {
     position: relative;
     width: 100vw;
     max-width: 1080px;
+    height: 100vh;
     max-height: 720px;
     aspect-ratio: 3/2;
-    background-color: transparent;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -324,13 +332,6 @@ header a {
     animation-play-state: paused;
 }
 
-.warning {
-    position: absolute;
-    right: 8px;
-    bottom: 8px;
-    text-align: right;
-}
-
 .text-box {
     position: absolute;
     opacity: 0;
@@ -339,13 +340,13 @@ header a {
 .text-box.left {
     position: absolute;
     left: 50%;
-    font-size: clamp(1em, 5vw, 3em);
+    font-size: clamp(1em, 5vw, 4em);
     font-weight: 700;
     font-style: italic;
     text-align: left;
     top: 35%;
     z-index: 3;
-    width: 50%;
+    width: 65%;
 }
 
 .text-box.right {
@@ -402,8 +403,8 @@ header a {
     gap: 16px;
     align-items: center;
     width: fit-content;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .project-square {
@@ -419,17 +420,6 @@ header a {
     justify-content: center;
 }
 
-.project-column:nth-child(1) .project-square {
-    background-color: rgb(105, 255, 0);
-}
-
-.project-column:nth-child(2) .project-square {
-    background-color: rgb(255, 105, 0);
-}
-
-.project-column:nth-child(3) .project-square {
-    background-color: rgb(255, 0, 105);
-}
 
 .project-column:nth-child(1) .project:hover .project-square,
 .project-column:nth-child(2) .project:hover .project-square,
@@ -443,19 +433,25 @@ header a {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    background-color: transparent;
     align-content: center;
 }
 
-.project-column:nth-child(1) .project:hover {
+.project-column:nth-child(1) .project-square,
+.project-column:nth-child(1) .project:hover,
+#eng:hover,
+.resume-button:hover {
     background-color: rgb(105, 255, 0);
 }
 
-.project-column:nth-child(2) .project:hover {
+.project-column:nth-child(2) .project-square,
+.project-column:nth-child(2) .project:hover,
+#kor:hover {
     background-color: rgb(255, 105, 0);
 }
 
-.project-column:nth-child(3) .project:hover {
+.project-column:nth-child(3) .project-square,
+.project-column:nth-child(3) .project:hover,
+#jpn:hover {
     background-color: rgb(255, 0, 105);
 }
 
@@ -508,19 +504,6 @@ header a {
     cursor: url('/cur/xp_link_xl.cur'), pointer;
     box-sizing: border-box;
     color: black;
-}
-
-#eng:hover,
-.resume-button:hover {
-    background-color: rgb(105, 255, 0);
-}
-
-#kor:hover {
-    background-color: rgb(255, 105, 0);
-}
-
-#jpn:hover {
-    background-color: rgb(255, 0, 105);
 }
 
 .front-page {
@@ -719,6 +702,7 @@ header a {
 }
 
 @media (max-width: 810px) {
+
     .image-section-2,
     .image-section-3 {
         width: 540px;
@@ -727,10 +711,16 @@ header a {
 }
 
 @media (max-width: 540px) {
+
     .image-section,
     .image-section-2,
     .image-section-3 {
         width: 270px;
+    }
+
+    .case-3:hover~.text-box.left,
+    .case-3:hover~.text-box.right {
+        opacity: 0;
     }
 }
 
@@ -765,7 +755,6 @@ footer {
 #visit-count {
     font-size: 16px;
     color: black;
-
 }
 
 .rectangle {
@@ -782,7 +771,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     overflow: hidden;
-    
+
 }
 
 .small-rectangle {
@@ -791,25 +780,31 @@ footer {
     background-color: #FFF;
     border: 2px solid #000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /* Optional for rounded corners */
+    border-radius: 10px;
+    /* Optional for rounded corners */
 
     /* Animation properties */
-    position: relative; /* Required for animation */
-    animation: move-rectangle 10s infinite; /* Animates continuously */
+    position: relative;
+    /* Required for animation */
+    animation: move-rectangle 10s infinite;
+    /* Animates continuously */
 }
 
 .small-rectangle img {
     width: 120px;
     height: 120px;
 }
+
 /* Animation keyframes for moving up to down */
 @keyframes move-rectangle {
     0% {
         transform: translateY(-200%);
     }
+
     50% {
         transform: translateY(0%);
     }
+
     100% {
         transform: translateY(200%);
     }
