@@ -15,7 +15,7 @@ html {
     font-size: 16px;
     color: black;
     background-color: transparent;
-    cursor: url('/cur/xp_arrow_xl.cur'), auto;
+    cursor: /*url('/cur/xp_arrow_xl.cur'),*/ auto;
 }
 
 html::-webkit-scrollbar {
@@ -53,7 +53,7 @@ header button,
 header svg,
 header a {
     border: none;
-    cursor: url('/cur/xp_link_xl.cur'), pointer;
+    cursor: /*url('/cur/xp_link_xl.cur'),*/ pointer;
     box-sizing: border-box;
     background-color: transparent;
 }
@@ -79,7 +79,7 @@ header a {
 
 .home svg:hover .name {
     fill: blue;
-    cursor: url('/cur/xp_link_xl.cur'), pointer;
+    /*cursor: url('/cur/xp_link_xl.cur'),*/ pointer;
 }
 
 .home:hover .dropdown-menu {
@@ -98,7 +98,7 @@ header a {
 .dropdown-menu a:hover {
     background-color: blue;
     color: white;
-    cursor: url('/cur/xp_link_xl.cur'), pointer;
+    cursor: /*url('/cur/xp_link_xl.cur'),*/ pointer;
 }
 
 #class-projects:hover {
@@ -149,7 +149,7 @@ header a {
 .submenu a:hover {
     background-color: blue;
     color: white;
-    cursor: url('/cur/xp_link_xl.cur'), pointer;
+    cursor: /*url('/cur/xp_link_xl.cur'),*/ pointer;
 }
 
 .contact-buttons {
@@ -166,12 +166,11 @@ header a {
 
 .email-button,
 .linkedin-button {
-    cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    cursor: url('/cur/xp_link_xl.cur'), pointer;
+    cursor: /*url('/cur/xp_link_xl.cur'),*/ pointer;
     box-sizing: border-box;
     font-family: helvetica;
     font-size: 16px;
@@ -317,7 +316,7 @@ header a {
 }
 
 .svg:hover {
-    cursor: url('/cur/xp_link_xl.cur'), pointer;
+    cursor: /*url('/cur/xp_link_xl.cur')*/ pointer;
     opacity: 0;
 }
 
@@ -396,7 +395,7 @@ header a {
 
 .project {
     text-decoration: none;
-    cursor: url('/cur/xp_link_xl.cur'), pointer;
+    cursor: /*url('/cur/xp_link_xl.cur'),*/ pointer;
     color: black;
     display: flex;
     height: 24px;
@@ -501,7 +500,7 @@ header a {
     text-align: center;
     width: 64px;
     height: 24px;
-    cursor: url('/cur/xp_link_xl.cur'), pointer;
+    cursor: /*url('/cur/xp_link_xl.cur'),*/ pointer;
     box-sizing: border-box;
     color: black;
 }
@@ -763,10 +762,6 @@ footer {
     position: absolute;
     text-align: center;
     right: 47.5%;
-}
-
-.version-link {
-    cursor: url('/cur/xp_link_xl.cur'), pointer;
 }
 
 #clock,
