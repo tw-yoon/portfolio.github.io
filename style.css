@@ -79,7 +79,7 @@ header a {
 
 .home svg:hover .name {
     fill: blue;
-    /*cursor: url('/cur/xp_link_xl.cur'),*/ pointer;
+    cursor: /*url('/cur/xp_link_xl.cur'),*/ pointer;
 }
 
 .home:hover .dropdown-menu {
